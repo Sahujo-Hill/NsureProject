@@ -1,0 +1,91 @@
+﻿@using NsureProject.Pages
+
+<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+    <nav class="flex-column">
+
+          <div class="top-row ps-3 navbar navbar-dark">
+             <div class="iconMenuLogo">
+                 @if (!@IconMenuActive)
+                {
+                    <a class="companyLogoNSmall" href="">N</a>
+                    <a class="navbar-brand companyLogoSureSmall" href="">sure</a>
+                }
+                @if (@IconMenuActive == true)
+                {
+                    <a class="companyLogoNSmall" href="">N</a>
+                }
+                 <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+                     <span class="navbar-toggler-icon"></span>
+                 </button>
+             </div>
+         </div>
+
+        <div class="nav-item px-3">
+            <NavLink style="margin-top: 10px;" class="nav-link" href="myCar" Match="NavLinkMatch.All">
+                <span class="oi oi-key" aria-hidden="true"></span>
+                    @if (!@IconMenuActive)
+                    {
+                        <label>My Car</label>
+                    }
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="myHome" Match="NavLinkMatch.All">
+                <span class="oi oi-home" aria-hidden="true"></span>
+                    @if (!@IconMenuActive)
+                    {
+                        <label>My Home</label>
+                    }
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="myLife" Match="NavLinkMatch.All">
+                <span class="oi oi-heart" aria-hidden="true"></span>
+                    @if (!@IconMenuActive)
+                    {
+                        <label>My Life</label>
+                    }
+            </NavLink>
+        </div>
+
+        <div class="bottom-row">
+            <div class="icon-menu-arrow">
+                @if (!@IconMenuActive)
+                {
+                    <button id="menuCollapse" class="oi oi-chevron-left" style="color: white;" @onclick="ToggleIconMenu"></button>
+                }
+                else
+                {
+                    <button id="menuCollapse" class="oi oi-chevron-right" style="color: white;" @onclick="ToggleIconMenu"></button>
+                }
+            </div>
+        </div>
+
+    </nav>
+
+</div>
+
+@code {
+    private bool IconMenuActive { get; set; } = false;
+
+    [Parameter]
+    public EventCallback<bool> ShowIconMenu { get; set; }
+
+    private bool collapseNavMenu = true;
+
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+
+    private async Task ToggleIconMenu()
+    {
+        IconMenuActive = !IconMenuActive;
+        await ShowIconMenu.InvokeAsync(IconMenuActive);
+    }
+
+}

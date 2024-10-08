@@ -1,0 +1,22 @@
+﻿@page "/"
+@inject NavigationManager Navigation
+
+        <div class="frame"><!--Generic Frame used for all pages: FrameSTART -->
+
+            <NsureProject.Components.Logo>
+
+            </NsureProject.Components.Logo>
+
+            <div class="loginEntry">
+
+                <p class="readex24 username">Username</p>
+                <input class="loginInput"/>
+                <p class="readex24">Password</p>
+                <input class="loginInput password" />
+
+                <NavLink class="NavLink LoginNavLink" href="policySelect" Match="NavLinkMatch.All">
+                    <button class="loginButton">Login</button>
+                </NavLink>
+
+            </div>
+        </div>

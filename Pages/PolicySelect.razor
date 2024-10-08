@@ -1,0 +1,49 @@
+﻿@page "/policySelect"
+
+    <div class="frame"> <!--Generic Frame used for all pages: FrameSTART -->
+
+        <NsureProject.Components.Logo>
+
+        </NsureProject.Components.Logo>
+
+        <div class="policySelector">
+
+            <NavLink class="NavLink" href="myCar" Match="NavLinkMatch.All">
+                <div class="myCar">
+                    <img class="myCarGif" src="/images/elecCar.gif" alt="Car" />
+
+                    <div class="policySelectWhiteBox">
+                        <span class="readex40">My Car</span>
+                    </div>
+                </div>
+            </NavLink>
+
+            <NavLink class="NavLink" href="myHome" Match="NavLinkMatch.All">
+                <div class="myHome">
+                    <img class="myHomeGif" src="/images/home.gif" alt="House" />
+
+                    <div class="policySelectWhiteBox">
+                        <span class="readex40">My Home</span>
+                    </div>
+                </div>
+            </NavLink>
+
+            <NavLink class="NavLink" href="myLife" Match="NavLinkMatch.All">
+                <div class="myLife">
+                    <img class="myLifeGif" src="/images/hospital.gif" alt="Hospital Bed" />
+
+                    <div class="policySelectWhiteBox">
+                        <span class="readex40">My Life</span>
+                    </div>
+                </div>
+            </NavLink>
+
+        </div>
+
+        <div class="readex24 policySelectHeading">Hi, please choose one of your policies.</div>
+
+            <a class="logOutButton" href="MicrosoftIdentity/Account/SignOut">
+                <button class="footerButton">Log out</button>
+            </a> <!--Not sure about this placement, might move-->
+
+    </div> <!--Generic Frame used for all pages: FrameEND -->

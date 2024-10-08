@@ -1,0 +1,877 @@
+﻿
+
+.readex-pro-<Readex Pro > {
+    font-family: "Readex Pro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <12>;
+    font-style: normal;
+    font-variation-settings: "HEXP" 0;
+}
+
+.inter-<uniquifier > {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <12>;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+/*Generic Styles*/
+
+.frame {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-top: 28px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.companyLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.logoText {
+    display: flex;
+    align-items: center;
+}
+
+.companyLogoN {
+    color: #3C9072;
+    font-family: "Readex Pro";
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 9.6px;
+    display: inline-block;
+}
+
+.companyLogoSure {
+    color: #000;
+    font-family: "Readex Pro";
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 9.6px;
+    display: inline-block;
+}
+
+.companyLogoCP {
+    color: #000;
+    font-family: "Readex Pro";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.companyLogoCPBG {
+    width: 100%;
+    height: 51px;
+    background: #D9D9D9;
+}
+
+.NavLink {
+    text-decoration: none;
+}
+
+.logOutButton {
+    text-decoration: none;
+}
+
+/*Login Styles*/
+
+.loginEntry {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginInput {
+    width: 313px;
+    padding-left: 10px;
+    height: 51px;
+    font-size: 24px;
+    background: #D9D9D9
+}
+
+.loginButton {
+    display: flex;
+    width: 232px;
+    height: 35px;
+    padding: 14px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background: #000;
+    box-shadow: -2px px 1px 1px rgba(0, 0, 0, 0.25);
+    color: white;
+    font-family: Inter;
+    transition-duration: 0.3s;
+}
+
+    .loginButton:hover {
+        background-color: #3C9072;
+        color: black;
+    }
+
+    .loginButton:active {
+        background-color: white;
+    }
+
+.alternateLoginContainer {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 50px 0;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    text-align: center
+}
+
+.username {
+    margin-bottom: 0px;
+    margin-top: 100px;
+}
+
+.password {
+    margin-bottom: 0px;
+}
+
+.LoginNavLink {
+    text-decoration: none;
+    margin-top: 30px;
+    align-self: center;
+}
+
+.microsoftAuth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .microsoftAuth p {
+        margin: 0 0 10px 0;
+        font-size: 16px;
+        color: #333;
+        font-family: Inter;
+    }
+
+/*Generic fonts with differing sizes*/
+
+.readex24 {
+    color: #000;
+    font-family: "Readex Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.4px;
+}
+
+.readex40 {
+    color: #000;
+    font-family: "Readex Pro";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 4px;
+}
+
+.readex32 {
+    color: #000;
+    font-family: "Readex Pro";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 4px;
+}
+
+.inter14Red {
+    color: #620000;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 19.60px;
+    word-wrap: break-word
+}
+
+.inter14Green {
+    color: #3C9072;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 19.60px;
+    word-wrap: break-word
+}
+
+.inter14Grey {
+    color: #828282;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 19.60px;
+    word-wrap: break-word
+}
+
+.inter14 {
+    color: black;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 19.60px;
+    word-wrap: break-word
+}
+
+/*PolicySelect Page Styles*/
+
+.policySelector {
+    display: flex;
+}
+
+.policySelectWhiteBox {
+    width: 303px;
+    height: 89px;
+    background: #FFF;
+    margin-right: 14px;
+    margin-left: 14px;
+    margin-top: 0px;
+    padding-top: 35px;
+    padding-left: 5px;
+}
+
+.policySelectHeading {
+    background-color: #D9D9D9;
+    margin-top: 22px;
+    padding: 11px 14px;
+}
+
+.myCar {
+    width: 331px;
+    height: 453px;
+    background: #D9D9D9;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+    .myCar:hover {
+        opacity: 85%;
+    }
+
+.myCarGif {
+    width: 90%;
+    height: auto;
+    margin: 112px 12px 5px 16px;
+}
+
+.myHome {
+    width: 331px;
+    height: 453px;
+    background: #D9D9D9;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-top: 16px;
+}
+
+    .myHome:hover {
+        opacity: 85%;
+    }
+
+.myHomeGif {
+    width: 90%;
+    height: auto;
+    margin: 112px 12px 5px 16px;
+}
+
+.myLife {
+    width: 331px;
+    height: 453px;
+    background: #D9D9D9;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+    .myLife:hover {
+        opacity: 85%;
+    }
+
+.myLifeGif {
+    width: 90%;
+    height: auto;
+    margin: 100px 12px 5px 16px;
+}
+
+/*myCar/Home/Life Page Styles*/
+
+.policyContainer {
+    display: flex;
+    flex-direction: row;
+    width: 1060px;
+    height: 453px;
+    flex-shrink: 0;
+    background: #D9D9D9;
+}
+
+.policyContainerWhiteBox {
+    width: 715px;
+    height: 429px;
+    flex-shrink: 0;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    background-color: white;
+}
+
+.mySummary {
+    display: flex;
+    flex-direction: column;
+    width: 331px;
+    height: 453px;
+    background: #D9D9D9;
+    padding-top: 16px;
+}
+
+.myCarSummary {
+    display: flex;
+    flex-direction: column;
+    width: 331px;
+    height: 453px;
+    background: #D9D9D9;
+    padding-top: 27px;
+}
+
+.dateTable {
+    margin: 62px 30px 0px 30px;
+    width: 650px;
+}
+
+    .dateTable tr {
+        border-bottom: 1px solid #000;
+    }
+
+    .dateTable td, .dateTable th {
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+
+    .dateTable td {
+        text-align: right;
+    }
+
+.summaryTable {
+    flex-direction: column;
+    width: 650px;
+    margin: 40px 30px 0px 30px;
+}
+
+    .summaryTable tr {
+        border-bottom: 1px solid black;
+    }
+
+    .summaryTable td, .summaryTable th {
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+
+    .summaryTable td {
+        text-align: left;
+    }
+
+.policyButtonSection {
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+    .policyButtonSection span {
+        margin-right: 32px;
+    }
+
+.docsIcon {
+    width: 50px;
+    height: auto;
+}
+
+.editIcon {
+    width: 65px;
+    height: auto;
+}
+
+.paymentIcon {
+    width: 70px;
+    height: auto;
+}
+
+.policyButton:hover {
+    opacity: 70%;
+}
+
+.policyButton span:hover {
+    text-decoration: underline solid #3C9072;
+}
+
+.mySummaryHomeGif {
+    width: 79%;
+    height: auto;
+    margin: 112px 12px 5px 16px;
+}
+
+/*MAC Styles*/
+
+.MACGreyBox {
+    width: 1097px;
+    height: 605px;
+    flex-shrink: 0;
+    background: #D9D9D9;
+}
+
+.MACWhiteBox {
+    width: 1056px;
+    height: 504px;
+    flex-shrink: 0;
+    background: #FFF;
+    margin: 5px 20.5px 19px 20.5px
+}
+
+.changeTitle {
+    padding-left: 18px;
+    padding-top: 36px;
+}
+
+.toChange {
+    width: 100%;
+    height: 85%;
+    padding: 14px 16px;
+}
+
+.toChangeBody tr:hover {
+    border-bottom: 1px solid #102920;
+    background-color: #DCE8E4;
+}
+
+.toChangeBody tr {
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 72px;
+}
+
+.toChangeBody th {
+    padding-left: 15px;
+}
+
+.toChangeBody td {
+    padding-left: 10px;
+}
+
+.pressToChange {
+    padding-right: 15px;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.toChangeBody tr span {
+    padding-left: 10px;
+    padding-top: 2px;
+}
+
+.disclaimer {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+/*Document Styles*/
+
+.docsGreyBox {
+    width: 1097px;
+    height: 605px;
+    flex-shrink: 0;
+    background: #D9D9D9;
+}
+
+.docsWhiteBox {
+    width: 1056px;
+    height: 504px;
+    flex-shrink: 0;
+    background: #FFF;
+    margin: 5px 20.5px 19px 20.5px
+}
+
+.docsTitle {
+    padding-left: 18px;
+    padding-top: 36px;
+}
+
+.docsTable {
+    width: 100%;
+    height: 85%;
+    padding: 14px 16px;
+}
+
+    .docsTable tr:hover {
+        border-bottom: 1px solid #102920;
+        background-color: #DCE8E4;
+    }
+
+
+.docsTableBody tr {
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 72px;
+}
+
+.docsTableBody th {
+    padding-left: 15px;
+}
+
+.docsTableBody td {
+    padding-left: 10px;
+}
+
+.pressToView {
+    padding-right: 15px;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.docsTableBody tr span {
+    padding-left: 10px;
+    padding-top: 2px;
+}
+
+.disclaimer {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+/*Payment Styles*/
+
+.paymentGreyBox {
+    width: 1097px;
+    height: 605px;
+    flex-shrink: 0;
+    background: #D9D9D9;
+}
+
+.paymentWhiteBox {
+    width: 1056px;
+    height: 504px;
+    flex-shrink: 0;
+    background: #FFF;
+    margin: 5px 20.5px 19px 20.5px
+}
+
+.paymentHeader {
+    display: flex;
+    flex-direction: row;
+}
+
+.paymentButton {
+    display: flex;
+    width: 232px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #3C9072;
+    box-shadow: -2px px 1px 1px rgba(0, 0, 0, 0.25);
+    color: white;
+    font-family: Inter;
+    transition-duration: 0.3s;
+    margin: 34px 15px 0px 300px;
+}
+
+    .paymentButton:hover {
+        background-color: black;
+        color: white;
+    }
+
+    .paymentButton:active {
+        background-color: white;
+    }
+
+.paymentTitle {
+    padding-left: 18px;
+    padding-top: 36px;
+}
+
+.paymentTable {
+    width: 100%;
+    height: 85%;
+    padding: 14px 16px;
+}
+
+.paymentTableTitle {
+    vertical-align: bottom;
+}
+
+    .paymentTableTitle th {
+        padding-bottom: 5px;
+    }
+
+.paymentTable tr:hover {
+    border-bottom: 1px solid #102920;
+    background-color: #DCE8E4;
+}
+
+.paymentTable tr:first-child:hover {
+    background-color: white;
+}
+
+.paymentTableBody tr {
+    border-bottom: 1px solid #828282;
+    width: 100%;
+    height: 72px;
+}
+
+.paymentTableBody th {
+    padding-left: 10px;
+}
+
+.paymentTableBody td {
+    padding-left: 10px;
+}
+
+.docsTableBody tr span {
+    padding-left: 10px;
+    padding-top: 2px;
+}
+
+.disclaimer {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+/*Footer Button Styles*/
+
+.footerButtonContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 27px;
+}
+
+.footerButton {
+    display: flex;
+    width: 232px;
+    height: 35px;
+    padding: 14px 24px;
+    margin: 27px 14px 0px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background: #000;
+    box-shadow: -2px px 1px 1px rgba(0, 0, 0, 0.25);
+    color: white;
+    font-family: Inter;
+    transition-duration: 0.3s;
+}
+
+    .footerButton:hover {
+        background-color: #3C9072;
+        color: black;
+    }
+
+    .footerButton:active {
+        background-color: white;
+    }
+
+.stickyFooter {
+    position: sticky;
+}
+
+@media only screen and (max-width: 640px) {
+
+    .top-row[b-7iz4lkzh76] {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+
+    html {
+        width: 100% !important;
+    }
+
+    .px-4 {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-dark .navbar-toggler-icon {
+        display: none;
+    }
+
+    .nav-item[b-jjntpdi7gp] a {
+        height: 100%;
+        line-height: 110%;
+    }
+
+    .fontMobile {
+        font-size: 10px;
+    }
+
+    .policySelector {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logOutButton {
+        padding-bottom: 5%;
+    }
+
+    .policyContainer {
+        width: 100%;
+        background-color: white;
+    }
+
+    .invisibleMobile {
+        display: none;
+    }
+
+
+    .policyContainerWhiteBox {
+        width: 100%;
+        margin: 0px;
+        padding: 3%
+    }
+
+    .dateTable {
+        width: 100%;
+        margin: 0;
+    }
+
+    .summaryTable {
+        width: 100%;
+        margin: 0;
+    }
+
+        .summaryTable td {
+            text-align: left;
+        }
+
+        .summaryTable th {
+            padding-right: 5px;
+        }
+
+    .policyButtonSection {
+        display: flex;
+        margin: 0px;
+        margin-top: 15px;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .footerButtonContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*Docs*/
+
+    .docsGreyBox {
+        width: 100%;
+        height: 100%;
+        padding: 3%;
+    }
+
+    .docsTitle {
+        padding: 0;
+        width: 100%;
+        padding-bottom: 3%;
+    }
+
+    .docsWhiteBox {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .docsTable {
+        width: 100%;
+    }
+
+    .docsTableBody {
+    }
+
+        .docsTableBody tr {
+            height: 0px;
+        }
+
+    /*MAC*/
+
+    .MACGreyBox {
+        width: 100%;
+        height: 100%;
+        padding: 3%;
+    }
+
+    .changeTitle {
+        width: 100%;
+        padding: 0;
+        padding-bottom: 3%;
+    }
+
+    .MACWhiteBox {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .toChange {
+        width: 100%;
+    }
+
+    .toChangeBody {
+        width: 100%;
+    }
+
+    /*Payments*/
+
+    .paymentGreyBox {
+        width: 100%;
+        height: 100%;
+        padding: 3%;
+    }
+
+    .paymentHeader {
+        width: 100%;
+    }
+
+    .paymentTitle {
+        width: 100%;
+        padding: 0;
+        padding-bottom: 3%;
+    }
+
+    .paymentButton {
+        width: 100%;
+        margin: 0;
+    }
+
+    .paymentWhiteBox {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .paymentTable {
+        width: 100%;
+    }
+}

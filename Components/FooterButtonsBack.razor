@@ -1,0 +1,17 @@
+﻿@inject IJSRuntime JSRuntime
+
+<div class="footerButtonContainer">
+    <a style="text-decoration: none;" href="MicrosoftIdentity/Account/SignOut">
+        <button class="footerButton">Log out</button>
+    </a>
+
+    <button style="text-decoration: none;" class="footerButton" @onclick="NavigateBack">Back to Your Policy</button>
+
+</div>
+
+@code {
+    private async Task NavigateBack()
+    {
+        await JSRuntime.InvokeVoidAsync("navigateBack");
+    }
+}
